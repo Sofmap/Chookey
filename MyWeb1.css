@@ -10,11 +10,11 @@ body {
 .container {
   max-width: 100%;
   margin: 0px auto;
-  box-sizing: border-box;
+  box-sizing:border-box;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
 }
 header {
@@ -68,8 +68,10 @@ header>ul>li:hover {
 .video-test {
   width: 100%;
   margin: 0px auto;
-  position: relative;
+  position:absolute;
   overflow: hidden;
+  flex-grow: 0;
+  z-index: -1;
 }
 section {
   padding: 0 3rem;
